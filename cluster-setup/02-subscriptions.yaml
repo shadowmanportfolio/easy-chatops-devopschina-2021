@@ -4,13 +4,13 @@ kind: Subscription
 metadata:
   labels:
     operators.coreos.com/argocd-operator.argo-cd: ""
-  name: argocd-operator
+  name: openshift-gitops-operator
   namespace: argo-cd
 spec:
-  channel: alpha
+  channel: stable
   installPlanApproval: Automatic
-  name: argocd-operator
-  source: community-operators
+  name: openshift-gitops-operator
+  source: redhat-operators
   sourceNamespace: openshift-marketplace
 ---
 apiVersion: operators.coreos.com/v1alpha1
