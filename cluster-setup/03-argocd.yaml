@@ -22,12 +22,12 @@ data:
   kustomize.buildOptions: ""
   repositories: |
     - type: git
-      url: https://github.com/pcarney8/easy-chatops-summit-2021
+      url: https://github.com/shadowmanportfolio/easy-chatops-devopschina-2021
   repository.credentials: ""
   resource.exclusions: ""
   resource.inclusions: ""
   statusbadge.enabled: "true"
-  url: https://argocd-server-argo-cd.apps.cluster-90c3.90c3.sandbox291.opentlc.com
+  url: https://argocd-server-argo-cd.apps.cluster-b005.b005.sandbox1048.opentlc.com
   users.anonymous.enabled: "false"
 kind: ConfigMap
 metadata:
