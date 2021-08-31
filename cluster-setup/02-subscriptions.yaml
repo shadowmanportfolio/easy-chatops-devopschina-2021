@@ -5,7 +5,7 @@ metadata:
   labels:
     operators.coreos.com/argocd-operator.argo-cd: ""
   name: argocd-operator
-  namespace: argo-cd
+  namespace: openshift-operators
 spec:
   channel: stable
   installPlanApproval: Automatic
