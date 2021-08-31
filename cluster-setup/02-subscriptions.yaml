@@ -7,10 +7,10 @@ metadata:
   name: argocd-operator
   namespace: argo-cd
 spec:
-  channel: alpha
+  channel: stable
   installPlanApproval: Automatic
-  name: argocd-operator
-  source: community-operators
+  name: openshift-gitops-operator
+  source: redhat-operators
   sourceNamespace: openshift-marketplace
 ---
 apiVersion: operators.coreos.com/v1alpha1
