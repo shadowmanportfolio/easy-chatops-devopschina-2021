@@ -15,7 +15,7 @@ This example repo uses the idea of a [trunk based development](https://trunkbase
 
 Tekton is building in the cluster based off of any changes to the `src` directory via GitHub action `.github/workflows/tekton-build.yaml`
 
-Once you are ready to release, create an Issue (use the [Release Issue template](https://github.com/pcarney8/easy-chatops-summit-2021/issues/new?assignees=&labels=&template=03_release.md&title=v1.0.0) for more documentation)
+Once you are ready to release, create an Issue (use the [Release Issue template](https://github.com/shadowmanportfolio/easy-chatops-devopschina-2021/issues/new?assignees=&labels=&template=03_release.md&title=v1.0.0) for more documentation)
 
 `/release` to create a tagged release based on the name</br>
 `/promote` to change the appropriate ArgoCD configs to point the new tag</br>
