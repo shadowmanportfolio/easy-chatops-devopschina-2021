@@ -71,7 +71,7 @@ spec:
       valueFiles:
       - {{ .Values.valueFile | default "values.yaml" }}
     path: {{ .Values.path | default (printf "charts/%s" .Values.app_name) }}
-    repoURL: {{ .Values.repoUrl | default (printf "https://github.com/pcarney8/%s" .Values.app_name) }}
+    repoURL: {{ .Values.repoUrl | default (printf "https://github.com/shadowmanportfolio/%s" .Values.app_name) }}
     targetRevision: {{ .Values.targetRevision | default "master" }}
 {{- end }}
 {{- end }}
