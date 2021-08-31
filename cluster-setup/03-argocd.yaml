@@ -27,7 +27,7 @@ data:
   resource.exclusions: ""
   resource.inclusions: ""
   statusbadge.enabled: "true"
-  url: https://argocd-server-argo-cd.apps.cluster-b005.b005.sandbox1048.opentlc.com
+  url: https://argocd-server-argo-cd.apps.cluster-05fa.05fa.sandbox1857.opentlc.com
   users.anonymous.enabled: "false"
 kind: ConfigMap
 metadata:
