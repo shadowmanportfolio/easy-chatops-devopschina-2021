@@ -9,13 +9,6 @@ spec:
     route:
       enabled: true
   statusBadgeEnabled: true
-  dex:
-    openShiftOAuth: true
-    image: quay.io/ablock/dex
-    version: openshift-connector
-  rbac:
-    policy: |
-      g, system:cluster-admins, role:admin
 ---
 apiVersion: v1
 data:
