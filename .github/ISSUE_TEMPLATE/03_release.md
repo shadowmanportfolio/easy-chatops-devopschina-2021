@@ -1,5 +1,5 @@
 ---
-name: Creating a Release
+name: 创建一个新版本
 about: A template to use for releasing
 title: v1.0.0
 labels: ''
