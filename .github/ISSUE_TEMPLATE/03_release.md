@@ -9,12 +9,12 @@ assignees: ''
 
 ## 🤖 请用您喜欢的版本命名规则来命名 issue 。比如： “v1.0.0”
 
-The following slash commands are available to use in comments on this issue:
+使用斜线命令可以在issue评论栏进行交互操作：
 
-| Command | Description | Parameters |
+| 命令 | 描述 | 参数 |
 |---|---|---|
-| `/release` | Creates a new tagged release (e.g. v1.0.0), branch (v1.0.0-branch), and Registry image tag (also v1.0.0) based on the current state of the `develop` branch | N/A |
-| `/promote` | Promotes with new Registry tag (e.g. demo), updates label ('promoted to demo'), and updates references on branch | N/A |
-| `/deploy` | Deploys the promotion to k8s cluster based on Issue Title | `cluster=<ci or prod>`</br>optional: `namespace=<namespace>` note: this is also the name of the `charts/new-app/values-*.yaml` file that will be used |
-| `/tekton` | Starts a run of a tekton task or pipeline | `cluster=<ci or prod>`</br>`run=<task or pipeline>`</br>`name=<the name of your task/pipeline>`</br>`namespace=<namespace on kube>`</br>`(optional) branch=<branch name that is different that issue-title-branch>` |
-| `/cancel` | Cancels the current release (closes this issue) | N/A |
+| `/release` | 基于当前的`develop`分支创建一个新的标记版本 (如 v1.0.0), 分支 (v1.0.0-branch), 以及镜像标签 (也是 v1.0.0) | N/A |
+| `/promote` | 晋级新的镜像库标签 (如 demo), 更新版本标签 ('promoted to demo'), 并且在分支上更新引用 | N/A |
+| `/deploy` | 基于Issue 标题部署晋级版本到 k8s 集群 | `cluster=<ci 或 prod>`</br>可选参数: `namespace=<namespace>` 注意： 这个名称也决定了以下的值文件会被使用 `charts/new-app/values-*.yaml` |
+| `/tekton` | 开始运行 tekton task 或 pipeline | `cluster=<ci 或 prod>`</br>`run=<task 或 pipeline>`</br>`name=<task/pipeline的名字>`</br>`namespace=<k8s 命名空间>`</br>`(可选) branch=<分支名和issue-title-branch名是不同的>` |
+| `/cancel` | 取消当前的版本 (即关闭本 issue) | N/A |
