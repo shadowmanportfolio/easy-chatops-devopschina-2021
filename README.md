@@ -1,17 +1,17 @@
-# Easy ChatOps based Release Automation with Tekton, ArgoCD and GitHub Actions
+# 基于Tekton、ArgoCD和GitHub Action的简单ChatOps发布自动化
 
-## Prerequisites
-1. An OpenShift cluster, with credentials stored as GitHub Repository Secrets
+## 先决条件
+1. OpenShift集群，并在代码库中命名以下GitHub Repository Secrets 作为集群的登录凭证
   - `OPENSHIFT_PASSWORD`
   - `OPENSHIFT_SERVER`
-2. ArgoCD deployed and repo added
-3. Tekton deployed and Tasks + Pipelines deployed
-4. [Personal Access Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) configured for [chatops slash commands](https://github.com/peter-evans/slash-command-dispatch#token) and GitHub Repository Secret created named: `SLASH_TOKEN` 
+2. 在OpenShift中部署ArgoCD，并将本代码库地址加入进来
+3. 在OpenShift中部署Tekton，并把预先准备好的 Tasks 和 Pipelines 部署进来
+4. 配置[Github 个人访问 Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) ，将 Token 值创建 GitHub Repository Secret 名为: `SLASH_TOKEN`。此 Secret 供 [chatops slash commands](https://github.com/peter-evans/slash-command-dispatch#token) 使用来访问代码库。 
 
-## Notes
-This example repo uses the idea of a [trunk based development](https://trunkbaseddevelopment.com/)
+## 说明
+这个样例代码库是根据 [基于 trunk 的开发](https://trunkbaseddevelopment.com/) 理念计划的。
 
-## How everything works
+## 运行机制
 
 Tekton is building in the cluster based off of any changes to the `src` directory via GitHub action `.github/workflows/tekton-build.yaml`
 
