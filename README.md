@@ -21,7 +21,7 @@
 `/promote` 命令用于切换适用的 ArgoCD 配置来指向新的标签</br>
 `/deploy` 命令用过于驱动 ArgoCD `Application` ，详细参见社区[文档](https://argoproj.github.io/argo-cd/getting_started/#6-create-an-application-from-a-git-repository)
 
-## 引用的GitHub Actions 来源：
+## 引用的 GitHub Actions 来源：
 - https://github.com/peter-evans/slash-command-dispatch
 - https://github.com/redhat-actions/openshift-tools-installer
 - https://github.com/redhat-actions/oc-login
@@ -31,7 +31,7 @@
 - https://github.com/peterjgrainger/action-create-branch
 - https://github.com/stefanzweifel/git-auto-commit-action 
 
-## Tekton Tasks & Pipelines 来源：
+## 引用的 Tekton Tasks & Pipelines 来源：
 
 - https://hub.tekton.dev/tekton/task/s2i
 - https://hub.tekton.dev/tekton/task/git-clone
