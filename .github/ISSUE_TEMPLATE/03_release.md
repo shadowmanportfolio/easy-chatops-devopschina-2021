@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-## 🤖 Please name this issue what you would like the new release to be called. E.g. "v1.0.0"
+## 🤖 请用您喜欢的版本命名规则来命名 issue 。比如： “v1.0.0”
 
 The following slash commands are available to use in comments on this issue:
 
